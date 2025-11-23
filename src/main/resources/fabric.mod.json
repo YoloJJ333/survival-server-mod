@@ -1,28 +1,30 @@
 {
-  "schemaVersion": 1,
-  "id": "survival-server-mod",
-  "version": "${version}",
-
-  "name": "Survival Server Mod",
-  "description": "mod for my survival server",
-  "authors": ["YoloJJ333"],
-  "contact": {},
-
-  "license": "MIT",
-  "icon": "assets/survival-server-mod/icon.png",
-
-  "environment": "server",
-  "entrypoints": {
-    "main": ["yolojj333.survivalServerMod.SurvivalServerMod"]
-  },
-
-  "mixins": [
-    "survival-server-mod.mixins.json"
-  ],
-
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "fabric": "*",
-    "minecraft": "${minecraft_version}"
-  }
+	"schemaVersion": 1,
+	"id": "survival-server-mod",
+	"version": "${version}",
+	"name": "Example mod",
+	"description": "Mod for my survival server",
+	"authors": [
+		"YoloJJ333"
+	],
+	"contact": {
+		"sources": "https://github.com/YoloJJ333/survival-server-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/survival-server-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"yolojj333.survival.SurvivalServerMod"
+		]
+	},
+	"mixins": [
+      "survival-server-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
 }
