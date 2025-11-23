@@ -11,6 +11,6 @@ public class SurvivalServerMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		log.info("Hello Fabric world!");
+		log.info("survival server mod starting");
 	}
 }
